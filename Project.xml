@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project xmlns="http://lime.openfl.org/project/1.0.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://lime.openfl.org/project/1.0.4 http://lime.openfl.org/xsd/project-1.0.4.xsd">
+
+	<app title="SOL-JSON Converter" file="SolToJSon" main="Main" version="0.0.1" company="PurSk" />
+	<app preloader="flixel.system.FlxPreloader" />
+
+	<set name="SWF_VERSION" value="11.8" />
+
+	<window width="1280" height="720" fps="133" background="#000000" hardware="true" vsync="false" antialiasing="2"/>
+
+	<window if="desktop" orientation="landscape" fullscreen="false" resizable="true" allow-high-dpi="true" />
+
+	<app path="export/${buildType}" />
+	<source path="source" />
+
+	<haxelib name="flixel" />
+
+	<haxedef name="haxeui_no_mouse_reset" />
+	<haxedef name="haxeui_focus_out_on_click" />
+	<haxedef name="haxeui_dont_impose_base_class" />
+	<haxedef name="openfl-enable-handle-error" />
+
+	<haxedef name="safeMode" />
+	<haxedef name="HXCPP_CHECK_POINTER" />
+	<haxedef name="HXCPP_STACK_LINE" />
+	<haxedef name="HXCPP_STACK_TRACE" />
+	<haxedef name="FLX_NO_FOCUS_LOST_SCREEN" />
+
+	<haxedef name="openfl_disable_graphics_pixel_snapping"/>
+
+	<haxedef name="FLX_NO_SOUND_SYSTEM" />
+	<haxedef name="FLX_NO_DEBUG" />
+	<haxedef name="NAPE_RELEASE_BUILD"/>
+	<haxedef name="message.reporting" value="pretty" />
+</project>
